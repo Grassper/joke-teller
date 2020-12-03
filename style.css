@@ -21,3 +21,53 @@ body {
   background-position: left center;
   background-repeat: no-repeat;
 }
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: #ffffff;
+  background: #ff3482;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  filter: brightness(95%);
+  -webkit-filter: brightness(95%);
+}
+
+button:active{
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
+
+button:disabled{
+  cursor: default;
+  filter: brightness(30%);
+  -webkit-filter: brightness(30%);
+}
+
+/* Media query: Tablet or Smaller phones */
+@media screen and (max-width: 1000px){
+  .container{
+    background-position: center center;
+    background-size: cover;
+  }
+
+  button{
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5) ;
+  }
+
+}
